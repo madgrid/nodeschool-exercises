@@ -1,0 +1,22 @@
+{
+  "name": "first-concept",
+  "version": "1.0.1",
+  "description": "Testing nodeschool projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madgrid/nodeschool.git"
+  },
+  "author": "Aaron Madved",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madgrid/nodeschool/issues"
+  },
+  "homepage": "https://github.com/madgrid/nodeschool#readme",
+  "dependencies": {
+    "@linclark/pkg": "^1.0.2"
+  }
+}

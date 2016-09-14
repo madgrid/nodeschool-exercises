@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'adduser' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:madgrid',
+4 verbose adduser   name: 'madgrid',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: 'aaronmadved@gmail.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2016-06-18T15:50:30.293Z' }
+5 verbose request uri http://localhost:15443/-/user/org.couchdb.user:madgrid
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 11:50:30 AM
+8 verbose request id 08fc22ef67d7fd5d
+9 http request PUT http://localhost:15443/-/user/org.couchdb.user:madgrid
+10 info retry will retry, error on last attempt: Error: socket hang up
+11 info attempt registry request try #2 at 11:50:40 AM
+12 http request PUT http://localhost:15443/-/user/org.couchdb.user:madgrid
+13 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+14 info attempt registry request try #3 at 11:51:40 AM
+15 http request PUT http://localhost:15443/-/user/org.couchdb.user:madgrid
+16 verbose request invalidating /Users/madgrid/.npm/localhost_15443/-/user/org.couchdb.user_3Amadgrid on PUT
+17 verbose adduser back [ { [Error: connect ECONNREFUSED 127.0.0.1:15443]
+17 verbose adduser     code: 'ECONNREFUSED',
+17 verbose adduser     errno: 'ECONNREFUSED',
+17 verbose adduser     syscall: 'connect',
+17 verbose adduser     address: '127.0.0.1',
+17 verbose adduser     port: 15443 },
+17 verbose adduser   undefined,
+17 verbose adduser   undefined ]
+18 verbose stack Error: connect ECONNREFUSED 127.0.0.1:15443
+18 verbose stack     at Object.exports._errnoException (util.js:870:11)
+18 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+18 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1061:14)
+19 verbose cwd /Users/madgrid/Dev/npmTestBed
+20 error Darwin 15.5.0
+21 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "adduser"
+22 error node v4.4.5
+23 error npm  v2.15.5
+24 error code ECONNREFUSED
+25 error errno ECONNREFUSED
+26 error syscall connect
+27 error Error: connect ECONNREFUSED 127.0.0.1:15443
+27 error     at Object.exports._errnoException (util.js:870:11)
+27 error     at exports._exceptionWithHostPort (util.js:893:20)
+27 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1061:14)
+27 error  { [Error: connect ECONNREFUSED 127.0.0.1:15443]
+27 error   code: 'ECONNREFUSED',
+27 error   errno: 'ECONNREFUSED',
+27 error   syscall: 'connect',
+27 error   address: '127.0.0.1',
+27 error   port: 15443 }
+28 error If you are behind a proxy, please make sure that the
+28 error 'proxy' config is set properly.  See: 'npm help config'
+29 verbose exit [ 1, true ]
